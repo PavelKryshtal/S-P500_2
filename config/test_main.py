@@ -13,5 +13,5 @@ class TestBohUpdate:
         library = StateFunctions(self.driver)
 
         # Check version
-        library.luna()
+        library.SP500()
         print("Success")
