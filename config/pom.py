@@ -27,5 +27,5 @@ class StateFunctions(BaseClass):
         self.is_visible(By.XPATH, Variables.S_P500_price)
         Variables.SP500_number_price = driver.find_element(By.XPATH, Variables.S_P500_price).text
 
-        # Print price
+        # Print prices
         print(Variables.SP500_number_price)
