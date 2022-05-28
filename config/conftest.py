@@ -1,3 +1,5 @@
+import time
+
 import pytest
 import selenium
 
@@ -10,7 +12,7 @@ from base.variables import *
 
 @pytest.fixture
 def get_webdriver():
-    driver = selenium.webdriver.Chrome(executable_path="./chromedriver.exe")
+    driver = selenium.webdriver.Chrome(executable_path="chromedriver.exe")
     return driver
 
 
@@ -19,8 +21,10 @@ def setup(request, get_webdriver):
     driver = get_webdriver
     wait = WebDriverWait(driver, 10)
 
-    driver.maximize_window()
 
+    driver.maximize_window()
+    time.sleep(3)
+    driver.get("https://ru.investing.com/indices/us-spx-500-chart")
     print("\n---------------Success-----------------")
     if request.cls is not None:
         request.cls.driver = driver
