@@ -22,7 +22,7 @@ def setup(request, get_webdriver):
     wait = WebDriverWait(driver, 10)
 
 
-    driver.maximize_window()
+    #driver.maximize_window()
     driver.get(Variables.S_P500_page)
     time.sleep(5)
     #driver.get("https://ru.investing.com/indices/us-spx-500-chart")
