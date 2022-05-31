@@ -23,9 +23,11 @@ def setup(request, get_webdriver):
 
 
     driver.maximize_window()
-    #time.sleep(3)
+    driver.get(Variables.S_P500_page)
+    time.sleep(5)
     #driver.get("https://ru.investing.com/indices/us-spx-500-chart")
-    #driver.is_visible(By.XPATH, Variables.S_p_500_accept_cookie)
+    driver.find_element(By.XPATH, "//button[@id = 'onetrust-accept-btn-handler']").click()
+    time.sleep(5)
     #driver.find_element(By.XPATH, Variables.S_p_500_accept_cookie).click()
     print("\n---------------Success-----------------")
     if request.cls is not None:

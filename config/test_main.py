@@ -16,8 +16,8 @@ class TestBohUpdate:
 
         # Check version
 
-        library.SP500()
-        time.sleep(5)
-        driver.find_element(By.XPATH, "//button[@id = 'onetrust-accept-btn-handler']").click()
-        time.sleep(3)
+        #library.SP500()
+        #time.sleep(5)
+        #driver.find_element(By.XPATH, "//button[@id = 'onetrust-accept-btn-handler']").click()
+        #time.sleep(3)
         print("Success")
