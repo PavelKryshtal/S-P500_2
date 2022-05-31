@@ -20,12 +20,12 @@ class StateFunctions(BaseClass):
         driver.get(Variables.S_P500_page)
 
         # Accept cookie files
-        #self.is_visible(By.XPATH, Variables.S_p_500_accept_cookie)
-        #driver.find_element(By.XPATH, Variables.S_p_500_accept_cookie).click()
+        self.is_visible(By.XPATH, Variables.S_p_500_accept_cookie)
+        driver.find_element(By.XPATH, Variables.S_p_500_accept_cookie).click()
 
         # Get current S&P500 price
-        #self.is_visible(By.XPATH, Variables.S_P500_price)
-        #Variables.SP500_number_price = driver.find_element(By.XPATH, Variables.S_P500_price).text
+        self.is_visible(By.XPATH, Variables.S_P500_price)
+        Variables.SP500_number_price = driver.find_element(By.XPATH, Variables.S_P500_price).text
 
         # Print prices
-        #print(Variables.SP500_number_price)
+        print(Variables.SP500_number_price)

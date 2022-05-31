@@ -23,7 +23,7 @@ def setup(request, get_webdriver):
 
 
     driver.maximize_window()
-    time.sleep(3)
+    #time.sleep(3)
     driver.get("https://ru.investing.com/indices/us-spx-500-chart")
     print("\n---------------Success-----------------")
     if request.cls is not None:
