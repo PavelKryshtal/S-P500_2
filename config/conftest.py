@@ -12,7 +12,7 @@ from base.variables import *
 
 @pytest.fixture
 def get_webdriver():
-    driver = selenium.webdriver.Chrome(executable_path="chromedriver.exe")
+    driver = selenium.webdriver.Chrome(executable_path="C:\\chromedriver.exe")
     return driver
 
 
