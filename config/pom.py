@@ -16,6 +16,10 @@ class StateFunctions(BaseClass):
         super().__init__(driver)
         self.driver = driver
 
+    def cardano_page(self):
+        driver = self.driver
+        driver.get(Variables.Cardano_page)
+
     def accept_cookie(self):
         driver = self.driver
         driver.get(Variables.Cardano_page)
@@ -27,7 +31,6 @@ class StateFunctions(BaseClass):
     def get_price(self):
         # Get current S&P500 price
         driver = self.driver
-        driver.get(Variables.Cardano_page)
 
         self.is_visible(By.XPATH, Variables.Cardano_price)
         Variables.Cardano_number_price = driver.find_element(By.XPATH, Variables.Cardano_price).text

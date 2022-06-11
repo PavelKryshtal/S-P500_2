@@ -10,8 +10,7 @@ class TestBohUpdate:
 
     def test_update(self):
         library = StateFunctions(self.driver)
-
-        Variables.file = open('SP500_price.txt', 'w')
+        library.cardano_page()
 
         while Variables.i < 3:
             Variables.day_yesterday = Variables.date
