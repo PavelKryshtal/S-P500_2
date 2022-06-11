@@ -7,19 +7,22 @@ class Variables:
     # Date
     time = ""
     date = ""
+    new_date:str = "somethimg wrong"
     date_yesterday = ""
 
     # File
     file = ""
 
     # Cryptocurensy
-    SP500_number_price = 0
+    Cardano_number_price = 0
     test:int = 12
     i = 0
     # Links
-    S_P500_page = "https://ru.investing.com/indices/us-spx-500-chart"
+    Cardano_page = "https://crypto.com/price/cardano"
     S_p_500_accept_cookie = "//button[@id = 'onetrust-accept-btn-handler']"
-    S_P500_price = "//span[@id = 'last_last']"
+    Cardano_price = "/html/body/div[1]/div[3]/div/div[2]/div[3]/div[1]/div[1]/div[1]/div/div[1]/h2/span"
+
+
 
 
 
