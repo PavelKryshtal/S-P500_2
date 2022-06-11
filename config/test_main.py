@@ -17,7 +17,6 @@ class TestBohUpdate:
 
             library.get_price()
             library.dot_remove()
-            library.write_price()
             library.wait_5s()
 
             library.data_base()
